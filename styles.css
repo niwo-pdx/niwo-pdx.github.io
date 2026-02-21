@@ -1,0 +1,60 @@
+/* COLORS:
+Eggshell: F4F1DE
+Apricot Cream: F2CC8F
+Burnt Peach: E07A5F
+Muted Teal: 81B29A
+Twilight Indigo: 3D405B 
+
+Sea Green: #00916e
+Linen: #feefe5
+Bright amber: #ffcf00
+Cayenne red: #ee6123
+Midnight violet: #160c28
+
+Evergreen: #003d2f
+*/
+:root {
+  --primary-color: #003d2f;
+  --secondary-color: #ffcf00;
+  --tertiary-color: #ee6123;
+  --font-light: #feefe5;
+  --font-dark: #160c28;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: var(--font-dark);
+}
+
+nav ul li a:hover {
+  background-color: var(--tertiary-color);
+}
+
+.main {
+  margin-top: 100px;
+  padding: 0 0.5em;
+}
+
+body {
+  background: var(--primary-color);
+  color: var(--font-light);
+}
