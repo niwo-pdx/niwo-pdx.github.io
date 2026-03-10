@@ -6,19 +6,22 @@ Muted Teal: 81B29A
 Twilight Indigo: 3D405B 
 
 Sea Green: #00916e
-Linen: #feefe5
-Bright amber: #ffcf00
-Cayenne red: #ee6123
-Midnight violet: #160c28
 
 Evergreen: #003d2f
+Linen: #feefe5
+Bright amber: #f5c800
+Cayenne red: #ee6123
+Carmine: #b8002e
+(dark font) Onyx: #001410
+
+ Midnight violet: #160c28
 */
 :root {
   --primary-color: #003d2f;
-  --secondary-color: #ffcf00;
+  --secondary-color: #f5c800;
   --tertiary-color: #ee6123;
   --font-light: #feefe5;
-  --font-dark: #160c28;
+  --font-dark: #001410;
 }
 
 nav {
