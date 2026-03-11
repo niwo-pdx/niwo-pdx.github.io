@@ -6,7 +6,7 @@ Muted Teal: 81B29A
 Twilight Indigo: 3D405B 
 
 Sea Green: #00916e
-
+Pine Teal: #005241
 Evergreen: #003d2f
 Linen: #feefe5
 Bright amber: #f5c800
@@ -17,18 +17,11 @@ Carmine: #b8002e
  Midnight violet: #160c28
 */
 :root {
-  --primary-color: #003d2f;
+  --primary-color: #005241;
   --secondary-color: #f5c800;
   --tertiary-color: #ee6123;
   --font-light: #feefe5;
   --font-dark: #001410;
-}
-
-nav {
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--secondary-color);
 }
 
 nav ul {
@@ -43,21 +36,72 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  padding: 1em;
+  padding: 0.5em;
   text-decoration: none;
   color: var(--font-dark);
+  font-family: "Quantico", sans-serif;
 }
 
 nav ul li a:hover {
   background-color: var(--tertiary-color);
 }
 
-.main {
-  margin-top: 100px;
-  padding: 0 0.5em;
-}
-
 body {
   background: var(--primary-color);
   color: var(--font-light);
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-family: "Quantico", sans-serif;
+}
+
+@media (max-width: 414px) {
+  nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+  }
+  .main {
+    padding: 0 0.75em;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 1024px) {
+  nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+  }
+  .main {
+    margin-top: 20px;
+    padding: 0 1em;
+  }
+}
+
+@media (min-width: 1025px) {
+  nav {
+    height: 100%;
+    width: 160px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    padding-top: 40px;
+    margin-left: 20px;
+    z-index: 1;
+    overflow-x: hidden;
+    background-color: var(--secondary-color);
+  }
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .main {
+    margin-left: 180px;
+    margin-top: 50px;
+    padding: 0 0.5em;
+  }
 }
