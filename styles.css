@@ -22,6 +22,25 @@ Carmine: #b8002e
   --tertiary-color: #ee6123;
   --font-light: #feefe5;
   --font-dark: #001410;
+  --lighter-green: #00916e;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-box {
+  width: 500px;
+  height: 120px;
+  background-color: var(--lighter-green);
+  border: 5px solid var(--tertiary-color);
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  text-align: center;
 }
 
 nav ul {
@@ -54,6 +73,22 @@ body {
 
 h1 {
   font-family: "Quantico", sans-serif;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+h2 {
+  font-family: "Quantico", sans-serif;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+hr {
+  border: none; /* Removes default border */
+  height: 2px; /* Sets the thickness of the line */
+  background-color: var(--lighter-green); /* Sets the line color */
+  width: 300px; /* Adjusts the width */
+  margin: 10px auto; /* Centers the line with spacing */
 }
 
 @media (max-width: 414px) {
@@ -61,9 +96,11 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
+    position: fixed;
     background-color: var(--secondary-color);
   }
   .main {
+    margin-top: 50px;
     padding: 0 0.75em;
   }
 }
@@ -73,18 +110,22 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
+    position: fixed;
     background-color: var(--secondary-color);
   }
   .main {
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 0 1em;
   }
 }
 
 @media (min-width: 1025px) {
+  nav ul li a {
+    font-size: 20px;
+  }
   nav {
     height: 100%;
-    width: 160px;
+    width: 200px;
     top: 0;
     left: 0;
     position: fixed;
@@ -100,7 +141,7 @@ h1 {
     margin-bottom: 10px;
   }
   .main {
-    margin-left: 180px;
+    margin-left: 250px;
     margin-top: 50px;
     padding: 0 0.5em;
   }
