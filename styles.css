@@ -138,6 +138,9 @@ figcaption {
   .carousel {
     display: none;
   }
+  .h1 {
+    font-size: 36px;
+  }
 }
 
 @media (min-width: 415px) and (max-width: 1024px) {
