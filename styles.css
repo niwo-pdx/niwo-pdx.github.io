@@ -19,8 +19,8 @@ Carmine: #b8002e
 :root {
   --primary-color: #005241;
   --secondary-color: #f5c800;
-  --tertiary-color: #ee6123;
-  --font-light: #feefe5;
+  --tertiary-color: #f47036;
+  --font-light: #faeaca;
   --font-dark: #001410;
   --lighter-green: #00916e;
 }
@@ -89,12 +89,37 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: "Lato", sans-serif;
+  color: var(--tertiary-color);
+  text-align: center;
+}
+
+.main a:link {
+  color: var(--secondary-color);
+}
+
+.main a:visited {
+  color: var(--tertiary-color);
+}
+
+h4 {
+  color: var(--secondary-color);
+  font-size: 16px;
+  text-align: center;
+}
+
 hr {
   border: none; /* Removes default border */
   height: 2px; /* Sets the thickness of the line */
   background-color: var(--lighter-green); /* Sets the line color */
   width: 300px; /* Adjusts the width */
   margin: 10px auto; /* Centers the line with spacing */
+}
+
+figcaption {
+  font-size: 16px;
+  margin-left: 60px;
 }
 
 @media (max-width: 414px) {
@@ -218,4 +243,38 @@ hr {
   .next {
     right: 10px;
   }
+}
+
+input[type="text"],
+select {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+textarea {
+  width: 90%;
+  height: 120px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+input[type="submit"] {
+  background-color: var(--lighter-green);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
