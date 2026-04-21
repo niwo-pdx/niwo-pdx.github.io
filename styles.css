@@ -16,6 +16,7 @@ Carmine: #b8002e
 
  Midnight violet: #160c28
 */
+
 :root {
   --primary-color: #005241;
   --secondary-color: #f5c800;
@@ -107,6 +108,7 @@ h4 {
   color: var(--secondary-color);
   font-size: 16px;
   text-align: center;
+  margin-left: 200px;
 }
 
 hr {
@@ -221,7 +223,7 @@ figcaption {
 
   .carousel-track {
     display: flex;
-    transition: transform 0.4s ease;
+    transition: transform 0.4s ease-in-out;
   }
 
   .slide {
@@ -229,6 +231,7 @@ figcaption {
     height: 375px;
     display: flex;
     justify-content: center;
+    position: relative;
     align-items: center;
     font-size: 2rem;
     background: var(--primary-color);
@@ -245,6 +248,7 @@ figcaption {
     border: none;
     cursor: pointer;
     padding: 10px;
+    z-index: 10;
   }
 
   .prev {
